@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2225px" height="576px" viewBox="0 0 2225 576" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill="#243072">
+            <text id="ACADEMIAN" font-family="REVONZA" font-size="500" font-weight="normal" text-decoration="underline">
+                <tspan x="29" y="483">ACADEMIAN</tspan>
+            </text>
+            <g id="variante-de-silueta-de-sombrero-de-graduacion" fill-rule="nonzero">
+                <path d="M274.053779,23.9046132 C288.092025,71.9901436 289.780577,91.7933694 289.780577,91.7933694 L169.682287,108.514079 L56.0452943,91.7933694 L71.7720924,23.9046132 L0,23.9046132 L0,0 L358.2531,0 L358.2531,23.9046132 L274.053779,23.9046132 Z M359.140452,112.585245 L355.470435,112.585245 C357.184832,110.487062 358.248793,107.888077 358.248793,105.030058 C358.248793,99.8018681 354.824305,95.3464661 349.991254,93.5159521 L349.991254,27.5656412 L341.376191,27.5656412 L341.376191,93.2051101 C335.991777,94.7463684 332.04177,99.4262673 332.04177,105.034375 C332.04177,107.892395 333.101423,110.495696 334.820128,112.589563 L331.150111,112.589563 L327.286255,159 L363,159 L359.140452,112.585245 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
