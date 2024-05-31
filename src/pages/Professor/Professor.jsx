@@ -109,74 +109,83 @@ export const Professor = () => {
   }
 
   return (
-    <><Header /><div className="profileElementsDesign">
-      <>
+    <>
+      <Header />
+      <div className="profileElementsDesign">
         <h1 className="title">MIS DATOS PERSONALES</h1>
         <h2 className="description">Desde aquí podrás actualizar siempre tus datos.</h2>
-        <CustomInput
-          typeProp="text"
-          nameProp="firstName"
-          placeholderProp="first name"
-          value={profileData.firstName}
-          isDisabled={!isEditing}
-          handlerProp={inputHandler} />
-        <CustomInput
-          typeProp="text"
-          nameProp="lastName"
-          placeholderProp="last name"
-          value={profileData.lastName}
-          isDisabled={!isEditing}
-          handlerProp={inputHandler} />
-        <CustomInput
-          typeProp="email"
-          nameProp="email"
-          placeholderProp="email"
-          value={profileData.email}
-          isDisabled={!isEditing}
-          handlerProp={inputHandler} />
-        <CustomInput
-          typeProp="phone"
-          nameProp="phone"
-          placeholderProp="phone"
-          value={profileData.phone}
-          isDisabled={!isEditing}
-          handlerProp={inputHandler} />
-        <CustomInput
-          typeProp="password"
-          nameProp="password"
-          placeholderProp="*****"
-          value={profileData.password}
-          isDisabled={!isEditing}
-          handlerProp={inputHandler} />
-        <CustomInput
-          typeProp="text"
-          nameProp="style"
-          placeholderProp="style"
-          value={profileData.style}
-          isDisabled={!isEditing}
-          handlerProp={inputHandler} />
-        <CustomInput
-          typeProp="text"
-          nameProp="area"
-          placeholderProp="area"
-          value={profileData.area}
-          isDisabled={!isEditing}
-          handlerProp={inputHandler} />
-        <CustomInput
-          typeProp="text"
-          nameProp="role"
-          placeholderProp="role"
-          value={profileData.role.name}
-          isDisabled="disabled"
-          handlerProp={inputHandler} />
-        <>
-          <ModalProfessor
-            profileData={profileData}
-            inputHandler={inputHandler}
-            token={token} />
-        </>
-      </>
-    </div>
+        <div className="profileGrid">
+          <CustomInput
+            typeProp="text"
+            nameProp="firstName"
+            placeholderProp="first name"
+            value={profileData.firstName}
+            isDisabled={!isEditing}
+            handlerProp={inputHandler}
+          />
+          <CustomInput
+            typeProp="text"
+            nameProp="lastName"
+            placeholderProp="last name"
+            value={profileData.lastName}
+            isDisabled={!isEditing}
+            handlerProp={inputHandler}
+          />
+          <CustomInput
+            typeProp="email"
+            nameProp="email"
+            placeholderProp="email"
+            value={profileData.email}
+            isDisabled={!isEditing}
+            handlerProp={inputHandler}
+          />
+          <CustomInput
+            typeProp="phone"
+            nameProp="phone"
+            placeholderProp="phone"
+            value={profileData.phone}
+            isDisabled={!isEditing}
+            handlerProp={inputHandler}
+          />
+          <CustomInput
+            typeProp="password"
+            nameProp="password"
+            placeholderProp="*****"
+            value={profileData.password}
+            isDisabled={!isEditing}
+            handlerProp={inputHandler}
+          />
+          <CustomInput
+            typeProp="text"
+            nameProp="style"
+            placeholderProp="style"
+            value={profileData.style}
+            isDisabled={!isEditing}
+            handlerProp={inputHandler}
+          />
+          <CustomInput
+            typeProp="text"
+            nameProp="area"
+            placeholderProp="area"
+            value={profileData.area}
+            isDisabled={!isEditing}
+            handlerProp={inputHandler}
+          />
+          <CustomInput
+            typeProp="text"
+            nameProp="role"
+            placeholderProp="role"
+            value={profileData.role.name}
+            isDisabled="disabled"
+            handlerProp={inputHandler}
+          />
+        </div>
+        <ModalProfessor
+          profileData={profileData}
+          inputHandler={inputHandler}
+          token={token}
+        />
+      </div>
       <div className="admin-area">
         {Appointments.length > 0
           ? (
@@ -184,6 +193,14 @@ export const Professor = () => {
               {Appointments.map((Appointment, User) => {
                 return (
                   <MDBTable>
+                    <MDBTableHead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                      </tr>
+                    </MDBTableHead>
                     <MDBTableBody>
                       <tr>
                         <td>
@@ -211,7 +228,6 @@ export const Professor = () => {
                 );
               })}
               <>
-
                 <ModalAppointment
                   profileData={profileData}
                   token={token} />

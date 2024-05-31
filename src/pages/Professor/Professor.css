@@ -20,3 +20,8 @@ body {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+.profileGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos */
+  }

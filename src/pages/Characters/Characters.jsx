@@ -24,28 +24,28 @@ export const Characters = () => {
 	useEffect(bringCharacters, [])
 
 	return (
-		<><Header /><div className="charactersDesign">
-			<ol>
-				{characters.map((char) => {
-					return (
-						<>
-							<div className="cardCharacter">
-								<Avatar image="/favicon.svg" size="xlarge" shape="circle" />
+		<>
+			<Header />
+			<div className="charactersDesign">
+				<ol className="charactersList">
+					{characters.map((char, index) => {
+						return (
+							<ol key={index} className="cardCharacter">
+								<Avatar image="/graduado.svg" size="xlarge" shape="circle" />
 								<div className="contactDesign">
 									<div className="contactName">
 										<p className="firstName">{char.user.firstName}</p>
 									</div>
 									<div className="contactData">
-										<p className="phone">{char.user.phone}</p>
+										<p className="phone">+34 {char.user.phone}</p>
 										<p className="email">{char.user.email}</p>
 									</div>
 								</div>
-							</div>
-						</>
-					);
-				})}
-
-			</ol>
-		</div></>
+							</ol>
+						);
+					})}
+				</ol>
+			</div>
+		</>
 	);
 };

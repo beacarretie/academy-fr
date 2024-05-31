@@ -13,7 +13,6 @@ export const Home = () => {
           <video src={videoBg} autoPlay loop muted />
           <div className="content">
           <img className='logovideo' src="../src/images/academian2024.svg"></img>
-              <p></p>
           </div>
       </div>
     </>

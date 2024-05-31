@@ -1,17 +1,13 @@
 .regularButtonClass {
     height: 3em;
-    width: 10em;
+    width: 30em;
 
     background-color: #243072;
     color: white;
 
     border: none;
 
-    transition: 0.3s;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: 0.2s;
 
     margin: 1em;
 
@@ -24,5 +20,9 @@
     cursor: pointer;
     background-color: #172159;
     transition: 0.3s;
+
+    align-items: center;
+    display: flex;
+    
 }
 
