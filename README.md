@@ -1,4 +1,4 @@
-# Studio Tattoos Frontend database
+# Studio Academy Frontend database
 
 <details>
   <summary>Contenido 📝</summary>
@@ -9,7 +9,7 @@
     <li><a href="#funcionalidades-mínimas-requeridas-(MVP)">Funcionalidades mínimas requeridas (MVP)</a></li>
     <li><a href="#tecnologías">Tecnologías</a></li>
     <li><a href="#mejoras">Mejoras</a></li>
-    <li><a href="#vídeo">Vídeo</a></li>
+    <li><a href="#demo">Demo</a></li>
     
   </ol>
 </details>
@@ -84,7 +84,7 @@ hooks, props, así como la funcionalidad de async/await.
 
 Se tendrá en cuenta la buena explicación del mismo en el README con ilustraciones y animaciones (gif, svg, etc.) al igual que los comentarios de calidad en el código.
 
-## Vídeo
+## Demo
 
 Pequeña demo de las funcionalidades que se pueden hacer desde la aplicación. 
 
